@@ -10,6 +10,7 @@
 | [**Spain Grid Pulse**](https://github.com/jonathantorresdata/spain-grid-pulse) | Daily pipeline over the public Red Eléctrica and Open-Meteo APIs: incremental, idempotent extraction with retries, **dbt + DuckDB** with 24 tests, a public page rebuilt every morning by GitHub Actions | Days with ≥60% renewables: 33.5 €/MWh vs 127.2 €/MWh below 40% · [live page](https://jonathantorresdata.github.io/spain-grid-pulse/) |
 | [**Grid Pulse on Airflow**](https://github.com/jonathantorresdata/grid-pulse-airflow) | **Apache Airflow 3**: DAGs linked by assets, dynamic task mapping, dbt as a quality gate, retries, alerts and DAG tests in CI | A real failure caught, retried and diagnosed: an unpinned dependency |
 | [**Wiki Stream Pulse**](https://github.com/jonathantorresdata/wiki-stream-pulse) | **Streaming** from the live Wikimedia event stream (~2,000 events/min, Kafka underneath): resumable offsets and checkpoints, micro-batches, at-least-once delivery with deduplication, event-time windows | Stopped and resumed with no data loss; median edit-to-arrival delay 1.2 s |
+| [**Fuel Price History**](https://github.com/jonathantorresdata/fuel-price-history) | Daily prices of ~11,500 Spanish petrol stations: **SCD type 2** history with gaps and islands, **change data capture** from snapshots, reconciliation tests | The brand moves diesel prices 16× more than the day of the week |
 
 #### Stack
 
